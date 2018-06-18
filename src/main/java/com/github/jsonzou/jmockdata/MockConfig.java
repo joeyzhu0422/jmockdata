@@ -111,6 +111,7 @@ public class MockConfig {
       if (typeVariables != null && typeVariables.length > 0) {
         for (int index = 0; index < typeVariables.length; index++) {
           typeVariableCache.put(typeVariables[index].getName(), types[index]);
+          init(types[index]);
         }
       }
     }
